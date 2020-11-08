@@ -7,15 +7,20 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<!-- {% include base_path %} -->
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in *Electrical & Computer Engineering*, *University of Washington*, present (GPA:  3.82/4.0)
+* B.S. in *Electrical Engineering*, *National Taiwan University*, 2014 (GPA: 3.78/4,0)
 
-Work experience
+
+<img src="https://yangchris11.github.io/images/cv/ntu.png" alt="ntu" width ="130" height="130"/>
+<img src="https://yangchris11.github.io/images/cv/uw.png" alt="uw" width ="130" height="130"/>
+
+
+
+Working experience
 ======
 * Summer 2015: Research Assistant
   * Github University
@@ -26,6 +31,9 @@ Work experience
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
+
+<img src="https://yangchris11.github.io/images/cv/asml.png" alt="asml_logo" width="260"/>
+<img src="https://yangchris11.github.io/images/cv/envive.png" alt="envive_logo" width="200"/>
   
 Skills
 ======
