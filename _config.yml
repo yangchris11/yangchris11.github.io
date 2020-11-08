@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "C.-Y. Chris Yang"
   avatar           : "profile.jpg"
-  bio              : "Be Boundless."
+  bio              : "ECE @ UWashington"
   location         : "Seattle, WA"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?hl=en&user=ULLPuPIAAAAJ"
+  googlescholar    :  # "https://scholar.google.com/citations?hl=en&user=ULLPuPIAAAAJ"
   email            : cycyang [at] uw.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
