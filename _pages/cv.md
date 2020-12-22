@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* M.S. in *Electrical & Computer Engineering*, *University of Washington*, present (GPA:  3.82/4.0)
+* M.S. in *Electrical & Computer Engineering*, *University of Washington*, present (GPA:  3.84/4.0)
 * B.S. in *Electrical Engineering*, *National Taiwan University*, 2014 (GPA: 3.78/4,0)
 
 
