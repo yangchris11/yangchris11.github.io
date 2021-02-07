@@ -47,6 +47,11 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
+$uw-purple					: #4b2e83;
+$uw-gold					: #b7a57a;
+$uw-metallic-gold			: #85754d;
+
+
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
@@ -58,8 +63,8 @@ $background-color           : #fff;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
-$border-color               : #4f8b72;
-$masthead-color             : #212121;
+$border-color               : $uw-gold;
+$masthead-color             : $uw-purple;
 
 $primary-color              : #7a8288;
 $success-color              : #62c462;
@@ -94,8 +99,8 @@ $xing-color                 : #006567;
 $link-color                 : $info-color;
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$masthead-link-color        : #fff;
+$masthead-link-color-hover  : mix(#000, #fff, 25%);
 
 
 /*
