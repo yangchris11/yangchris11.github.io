@@ -28,7 +28,7 @@ Working Experiences
 * [Jun 2019 - Aug 2019] Machine Learning Engineer Intern, Envive Inc., Taipei
 * [Jun 2018 - Aug 2018] Machine Learning Engineer Intern, Envive Inc., Taipei
 
-<img src="https://yangchris11.github.io/images/cv/amazonlab126.png" alt="amazon126_logo" width="200"/>
+<img src="https://yangchris11.github.io/images/cv/amazonlab126.png" alt="amazon126_logo" width="190"/>  
 <img src="https://yangchris11.github.io/images/cv/asml.png" alt="asml_logo" width="200"/>
 <img src="https://yangchris11.github.io/images/cv/envive.png" alt="envive_logo" width="180"/>
   
