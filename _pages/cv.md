@@ -11,7 +11,8 @@ redirect_from:
 
 Education
 ======
-* M.S. in *Electrical & Computer Engineering*, *University of Washington*, present (GPA:  3.84/4.0)
+* Ph.D. in *Electrical & Computer Engineering (Advisor: Prof. Jenq-Neng Hwang)*, *University of Washington*, present
+* M.S. in *Electrical & Computer Engineering*, *University of Washington*, 2021 (GPA:  3.84/4.0)
 * B.S. in *Electrical Engineering*, *National Taiwan University*, 2014 (GPA: 3.78/4,0)
 
 
@@ -22,13 +23,12 @@ Education
 
 Working Experiences
 ======
-* Software Engineer Intern, ASML (Jun 2020 - Sep 2020)
+* [Summer 2021] Incoming Applied Scientist Intern, Amazon, Sunnyvale
+* [Jun 2020 - Sep 2020] Software Engineer Intern, ASML, San Diego (Virtual)
+* [Jun 2019 - Aug 2019] Machine Learning Engineer Intern, Envive Inc., Taipei
+* [Jun 2018 - Aug 2018] Machine Learning Engineer Intern, Envive Inc., Taipei
 
-* Machine Learning Engineer Intern, Envive Inc. (Jun 2019 - Aug 2019)
-
-* Machine Learning Engineer Intern, Envive Inc. (Jun 2018 - Aug 2018)
-
-
+<img src="https://yangchris11.github.io/images/cv/amazonlab126.png" alt="amazon126_logo" width="200"/>
 <img src="https://yangchris11.github.io/images/cv/asml.png" alt="asml_logo" width="200"/>
 <img src="https://yangchris11.github.io/images/cv/envive.png" alt="envive_logo" width="180"/>
   
