@@ -9,17 +9,19 @@ redirect_from:
 
 <!-- {% include base_path %} -->
 
+---
+
 Education
 ======
 * Ph.D. in *Electrical & Computer Engineering (Advisor: Prof. Jenq-Neng Hwang)*, *University of Washington*, present
-* M.S. in *Electrical & Computer Engineering*, *University of Washington*, 2021 (GPA:  3.84/4.0)
-* B.S. in *Electrical Engineering*, *National Taiwan University*, 2014 (GPA: 3.78/4,0)
+* M.S. in *Electrical & Computer Engineering*, *University of Washington*, 2021 (GPA:  3.87/4.0)
+* B.S. in *Electrical Engineering*, *National Taiwan University*, 2019 (GPA: 3.78/4,0)
 
 
-<img src="https://yangchris11.github.io/images/cv/ntu.png" alt="ntu" width ="130" height="130"/>
 <img src="https://yangchris11.github.io/images/cv/uw.png" alt="uw" width ="130" height="130"/>
+<img src="https://yangchris11.github.io/images/cv/ntu.png" alt="ntu" width ="130" height="130"/>
 
-
+----
 
 Working Experiences
 ======
@@ -32,7 +34,7 @@ Working Experiences
 <img src="https://yangchris11.github.io/images/cv/asml.png" alt="asml_logo" width="130"/>
 <img src="https://yangchris11.github.io/images/cv/envive.png" alt="envive_logo" width="120"/>
   
-
+----
 
 Teaching Experiences
 ======
