@@ -21,13 +21,19 @@ My recent research interests lie around 3D human pose estimation and multi-modal
 
 &nbsp;
 
-Updates:
+Update:
+
+(Apr. 2021): My 1st author paper: *Long-Tailed Recognition of SAR Aerial View Objects by Cascading and Paralleling Experts* was accepted by the NTIRE Workshop in conjunction with CVPR 2021!
+
+(Apr. 2021): We won the 4th place of the NTIRE 2021 Multi-modal Aerial View Object Classification Challenge - Track 1 among 45 teams!
 
 (Mar. 2021): Start my Ph.D. at University of Washington ECE working with Prof. Jenq-Neng Hwang!
 
 (Mar. 2021): Received Master's degree in ECE (GPA:3.87/4.0) from University of Washington! 
 
 (Sep. 2019): Start my Master's at University of Washington ECE!
+
+(Mar. 2019): My 1st author paper: *Weakly-Supervised Learning for Attention-Guided Skull Fracture Classification in Computed Tomography Imaging* was accepted by ICIP 2019.
 
 (Jan. 2019): Received Bachelor's degree in EE (GPA:3.78/4.0) from National Taiwan University!
 
