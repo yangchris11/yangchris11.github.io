@@ -19,11 +19,13 @@ My recent research interests lie around 3D human pose estimation and multi-modal
 
 
 <img src="https://yangchris11.github.io/images/midnight-maskrcnn.png" alt="midnight" width="2000"/>  
-This is Midnight/Pán-pan!
+This is Midnight/Pán-pan! She just turned 1-year-old!
 
 &nbsp;
 
 Update:
+
+(Jun. 2021): Start my summer internship at Amazon as an applied scientist working with Dr.Jiajia Luo and Dr.Cheng-Hao Kuo!
 
 (Apr. 2021): My 1st author paper: *Long-Tailed Recognition of SAR Aerial View Objects by Cascading and Paralleling Experts* was accepted by the NTIRE Workshop in conjunction with CVPR 2021!
 

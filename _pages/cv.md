@@ -25,7 +25,7 @@ Education
 
 Working Experiences
 ======
-* [Summer 2021] Incoming Applied Scientist Intern, Amazon, Bellevue
+* [Jun 2021 - present] Applied Scientist Intern, Amazon, Bellevue
 * [Jun 2020 - Sep 2020] Software Engineer Intern, ASML, San Diego (Virtual)
 * [Jun 2019 - Aug 2019] Machine Learning Engineer Intern, Envive Inc., Taipei
 * [Jun 2018 - Aug 2018] Machine Learning Engineer Intern, Envive Inc., Taipei
