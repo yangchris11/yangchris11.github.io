@@ -2,24 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+description:
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-news: true # includes a list of news items
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
+
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a fourth-year Ph.D. student in the Department of Electrical & Computer Engineering at University of Washington. I am working with [Prof. Jenq-Neng Hwang](https://people.ece.uw.edu/hwang/) and the [Information Prcoessing Lab](https://ipl-uw.github.io/). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Prior to that, I received my M.S. degree in ECE at University of Washington and B.S. degree in EE at National Taiwan University. I worked with [Prof. Yu-Chiang Frank Wang](http://vllab.ee.ntu.edu.tw/members.html) at the [Vision and Learning Lab](http://vllab.ee.ntu.edu.tw/) on computer vision.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research interests lie around **Multi-Object Tracking (Single-View, Multi-View, Cross-View) in complex scenes (Underwater, Drone, Multi-Camera System)**. 
+
+<!-- I am actively looking for 2024 spring/summer/fall research intern role in the area of Computer Vision [[latest resume]](assets/pdf/Research_Resume.pdf)! -->
