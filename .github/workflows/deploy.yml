@@ -1,0 +1,126 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.bib"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**/*.json"
+      - "**/*.rb"
+      - "**/*.scss"
+      - "**/*.yaml"
+      - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "package.json"
+      - "package-lock.json"
+      - "purgecss.config.js"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/broken-links.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!lighthouse_results/**"
+      - "!CONTRIBUTING.md"
+      - "!CUSTOMIZE.md"
+      - "!FAQ.md"
+      - "!INSTALL.md"
+      - "!README.md"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.bib"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**/*.json"
+      - "**/*.rb"
+      - "**/*.scss"
+      - "**/*.yaml"
+      - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "package.json"
+      - "package-lock.json"
+      - "purgecss.config.js"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/broken-links.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!lighthouse_results/**"
+      - "!CONTRIBUTING.md"
+      - "!CUSTOMIZE.md"
+      - "!FAQ.md"
+      - "!INSTALL.md"
+      - "!README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    # available images: https://github.com/actions/runner-images#available-images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Validate preview entrypoint
+        run: bash -n bin/entry_point.sh
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1
+        with:
+          ruby-version: "3.2.2"
+          bundler-cache: true
+      - name: Install and Build 🔧
+        run: |
+          pip3 install --upgrade jupyter
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+      - name: Purge unused CSS 🧹
+        run: |
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
+      - name: Upload site artifact ⬆️
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: site
+          path: _site
+          include-hidden-files: true
+          retention-days: 1
+
+  deploy:
+    if: >-
+      github.event_name != 'pull_request' &&
+      (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+    needs: build
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Download site artifact ⬇️
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: site
+          path: _site
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
+        with:
+          folder: _site

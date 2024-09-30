@@ -1,0 +1,41 @@
+name: Check for broken links on site
+
+on:
+  workflow_run:
+    workflows: [Deploy site]
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  check-links-on-site:
+    # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # available images: https://github.com/actions/runner-images#available-images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1
+        with:
+          ruby-version: "3.2.2"
+          bundler-cache: true
+      - name: Install and Build 🔧
+        run: |
+          pip3 install --upgrade jupyter
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+      - name: Purge unused CSS 🧹
+        run: |
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
+      - name: Link Checker 🔗
+        uses: lycheeverse/lychee-action@22134d37a1fff6c2974df9c92a7c7e1e86a08f9c # v1.9.0
+        with:
+          fail: true
+          # only check local links
+          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'

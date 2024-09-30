@@ -1,0 +1,47 @@
+name: Prettier code formatter
+
+on:
+  pull_request:
+    branches:
+      - master
+      - main
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    # available images: https://github.com/actions/runner-images#available-images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - name: Install Prettier 💾
+        run: npm ci
+      - name: Prettier Check 🔎
+        id: prettier
+        run: npx prettier . --check
+      - name: Create diff 📝
+        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
+        if: ${{ failure() }}
+        run: |
+          npx prettier . --write
+          git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
+          npm install -g diff2html-cli
+          diff2html -i file -s side -F diff.html -- diff.txt
+      - name: Upload html diff ⬆️
+        id: artifact-upload
+        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: HTML Diff
+          path: diff.html
+          retention-days: 7
