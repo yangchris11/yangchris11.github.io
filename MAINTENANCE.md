@@ -56,6 +56,6 @@ After pushing, verify these GitHub Actions checks:
 3. `Deploy site`
 4. `Check for broken links on site`
 
-The Lighthouse workflow is manual and requires the `LIGHTHOUSE_BADGER_TOKEN` repository secret.
+The inherited Lighthouse Badger and Docker publishing workflows are intentionally removed. They are unrelated to publishing this personal site and would otherwise require long-lived external credentials.
 
 For a manual redeploy, run `Deploy site` from the GitHub Actions page. Do not use `bin/deploy` for routine updates because it force-pushes the generated `gh-pages` branch.
