@@ -18,17 +18,19 @@ manage_gemfile_lock() {
 
 start_jekyll() {
     manage_gemfile_lock
-    exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
+    jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
+    jekyll_pid=$!
 }
 
+trap 'kill "$jekyll_pid" 2>/dev/null || true' EXIT INT TERM
 start_jekyll
 
 while true; do
     inotifywait -q -e modify,move,create,delete $CONFIG_FILE
     if [ $? -eq 0 ]; then
         echo "Change detected to $CONFIG_FILE, restarting Jekyll"
-        jekyll_pid=$(pgrep -f jekyll)
-        kill -KILL $jekyll_pid
+        kill -TERM "$jekyll_pid" 2>/dev/null || true
+        wait "$jekyll_pid" 2>/dev/null || true
         start_jekyll
     fi
 done
