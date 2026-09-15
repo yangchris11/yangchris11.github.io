@@ -366,7 +366,7 @@
             title: 'Strava',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.strava.com/athletes/{{ site.strava_userid }}", "_blank");
+              window.open("https://www.strava.com/athletes/{{ site.strava_userid }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -376,7 +376,7 @@
             title: 'Keybase',
             section: 'Socials',
             handler: () => {
-              window.open("https://keybase.io/{{ site.keybase_username }}", "_blank");
+              window.open("https://keybase.io/{{ site.keybase_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -386,7 +386,7 @@
             title: 'GitLab',
             section: 'Socials',
             handler: () => {
-              window.open("https://gitlab.com/{{ site.gitlab_username }}", "_blank");
+              window.open("https://gitlab.com/{{ site.gitlab_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -396,7 +396,7 @@
             title: 'DBLP',
             section: 'Socials',
             handler: () => {
-              window.open("{{ site.dblp_url }}", "_blank");
+              window.open("{{ site.dblp_url }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -406,7 +406,7 @@
             title: 'Stackoverflow',
             section: 'Socials',
             handler: () => {
-              window.open("https://stackoverflow.com/users/{{ site.stackoverflow_id }}", "_blank");
+              window.open("https://stackoverflow.com/users/{{ site.stackoverflow_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -416,7 +416,7 @@
             title: 'Kaggle',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.kaggle.com/{{ site.kaggle_id }}", "_blank");
+              window.open("https://www.kaggle.com/{{ site.kaggle_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
