@@ -135,7 +135,7 @@
             title: 'Telegram',
             section: 'Socials',
             handler: () => {
-              window.open("https://telegram.me/{{ site.telegram_username }}", "_blank");
+              window.open("https://telegram.me/{{ site.telegram_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -145,7 +145,7 @@
             title: 'WhatsApp',
             section: 'Socials',
             handler: () => {
-              window.open("https://wa.me/{{ site.whatsapp_number }}", "_blank");
+              window.open("https://wa.me/{{ site.whatsapp_number }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -155,7 +155,7 @@
             title: 'ORCID',
             section: 'Socials',
             handler: () => {
-              window.open("https://orcid.org/{{ site.orcid_id }}", "_blank");
+              window.open("https://orcid.org/{{ site.orcid_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -165,7 +165,7 @@
             title: 'Google Scholar',
             section: 'Socials',
             handler: () => {
-              window.open("https://scholar.google.com/citations?user={{ site.scholar_userid }}", "_blank");
+              window.open("https://scholar.google.com/citations?user={{ site.scholar_userid }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -175,7 +175,7 @@
             title: 'Semantic Scholar',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}", "_blank");
+              window.open("https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -185,7 +185,7 @@
             title: 'Publons',
             section: 'Socials',
             handler: () => {
-              window.open("https://publons.com/a/{{ site.publons_id }}/", "_blank");
+              window.open("https://publons.com/a/{{ site.publons_id }}/", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
