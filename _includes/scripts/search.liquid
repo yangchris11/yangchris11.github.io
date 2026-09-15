@@ -486,7 +486,7 @@
             title: 'Bluesky',
             section: 'Socials',
             handler: () => {
-              window.open("https://bsky.app/profile/{{ site.bluesky_url }}", "_blank");
+              window.open("https://bsky.app/profile/{{ site.bluesky_url }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -496,7 +496,7 @@
             title: 'YouTube',
             section: 'Socials',
             handler: () => {
-              window.open("https://youtube.com/@{{ site.youtube_id }}", "_blank");
+              window.open("https://youtube.com/@{{ site.youtube_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -506,7 +506,7 @@
             title: 'Discord',
             section: 'Socials',
             handler: () => {
-              window.open("https://discord.com/users/{{ site.discord_id }}", "_blank");
+              window.open("https://discord.com/users/{{ site.discord_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -516,7 +516,7 @@
             title: 'Zotero',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.zotero.org/{{ site.zotero_username }}", "_blank");
+              window.open("https://www.zotero.org/{{ site.zotero_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -526,7 +526,7 @@
             title: 'RSS Feed',
             section: 'Socials',
             handler: () => {
-              window.open("{{ site.baseurl }}/feed.xml", "_blank");
+              window.open("{{ site.baseurl }}/feed.xml", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
