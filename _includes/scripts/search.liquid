@@ -306,7 +306,7 @@
             title: 'Quora',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.quora.com/profile/{{ site.quora_username }}", "_blank");
+              window.open("https://www.quora.com/profile/{{ site.quora_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -316,7 +316,7 @@
             title: 'Flickr',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.flickr.com/{{ site.flickr_id }}", "_blank");
+              window.open("https://www.flickr.com/{{ site.flickr_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -326,7 +326,7 @@
             title: 'Blogger',
             section: 'Socials',
             handler: () => {
-              window.open("{{ site.blogger_url }}", "_blank");
+              window.open("{{ site.blogger_url }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -336,7 +336,7 @@
             title: 'Work',
             section: 'Socials',
             handler: () => {
-              window.open("{{ site.work_url }}", "_blank");
+              window.open("{{ site.work_url }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -346,7 +346,7 @@
             title: 'Wikidata',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.wikidata.org/wiki/{{ site.wikidata_id }}", "_blank");
+              window.open("https://www.wikidata.org/wiki/{{ site.wikidata_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -356,7 +356,7 @@
             title: 'Wikipedia',
             section: 'Socials',
             handler: () => {
-              window.open("https://wikipedia.org/wiki/User:{{ site.wikipedia_id }}", "_blank");
+              window.open("https://wikipedia.org/wiki/User:{{ site.wikipedia_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
