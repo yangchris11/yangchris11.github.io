@@ -255,7 +255,7 @@
             title: 'GitHub',
             section: 'Socials',
             handler: () => {
-              window.open("https://github.com/{{ site.github_username }}", "_blank");
+              window.open("https://github.com/{{ site.github_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -265,7 +265,7 @@
             title: 'LinkedIn',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.linkedin.com/in/{{ site.linkedin_username }}", "_blank");
+              window.open("https://www.linkedin.com/in/{{ site.linkedin_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -276,7 +276,7 @@
             description: 'Twitter',
             section: 'Socials',
             handler: () => {
-              window.open("https://twitter.com/{{ site.x_username }}", "_blank");
+              window.open("https://twitter.com/{{ site.x_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -286,7 +286,7 @@
             title: 'Mastodon',
             section: 'Socials',
             handler: () => {
-              window.open("https://{{ site.mastodon_username  }}", "_blank");
+              window.open("https://{{ site.mastodon_username  }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -296,7 +296,7 @@
             title: 'Medium',
             section: 'Socials',
             handler: () => {
-              window.open("https://medium.com/@{{ site.medium_username }}", "_blank");
+              window.open("https://medium.com/@{{ site.medium_username }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
