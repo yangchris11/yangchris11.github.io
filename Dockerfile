@@ -29,7 +29,7 @@ COPY Gemfile /srv/jekyll
 WORKDIR /srv/jekyll
 
 # install jekyll and dependencies
-RUN gem install jekyll bundler
+RUN gem install bundler
 
 RUN bundle install --no-cache
 # && rm -rf /var/lib/gems/3.1.0/cache
