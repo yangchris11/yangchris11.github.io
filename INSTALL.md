@@ -55,6 +55,10 @@ $ docker compose pull
 $ docker compose up
 ```
 
+The development server is published on `127.0.0.1:8080` (with live reload on
+`127.0.0.1:35729`) so the preview is not exposed to other devices on your
+network. Open <http://127.0.0.1:8080> in your browser.
+
 Note that when you run it for the first time, it will download a docker image of size 400MB or so. To see the template running, open your browser and go to `http://localhost:8080`. You should see a copy of the theme's demo website.
 
 Now, feel free to customize the theme however you like (don't forget to change the name!). Also, your changes should be automatically rendered in real-time (or maybe after a few seconds).
@@ -70,6 +74,9 @@ Build and run a new docker image using:
 ```bash
 $ docker compose up --build
 ```
+
+Use this form when you want to build from the repository's pinned Ruby base
+image instead of using the pre-built Docker Hub image.
 
 > If you want to update jekyll, install new ruby packages, etc., all you have to do is build the image again using `--force-recreate` argument at the end of the previous command! It will download Ruby and Jekyll and install all Ruby packages again from scratch.
 
