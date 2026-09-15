@@ -426,7 +426,7 @@
             title: 'Last FM',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.last.fm/user/{{ site.lastfm_id }}", "_blank");
+              window.open("https://www.last.fm/user/{{ site.lastfm_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -436,7 +436,7 @@
             title: 'Spotify',
             section: 'Socials',
             handler: () => {
-              window.open("https://open.spotify.com/user/{{ site.spotify_id }}", "_blank");
+              window.open("https://open.spotify.com/user/{{ site.spotify_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -446,7 +446,7 @@
             title: 'Pinterest',
             section: 'Socials',
             handler: () => {
-              window.open("https://www.pinterest.com/{{ site.pinterest_id }}", "_blank");
+              window.open("https://www.pinterest.com/{{ site.pinterest_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -456,7 +456,7 @@
             title: 'Unsplash',
             section: 'Socials',
             handler: () => {
-              window.open("https://unsplash.com/@{{ site.unsplash_id }}", "_blank");
+              window.open("https://unsplash.com/@{{ site.unsplash_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -466,7 +466,7 @@
             title: 'Instagram',
             section: 'Socials',
             handler: () => {
-              window.open("https://instagram.com/{{ site.instagram_id }}", "_blank");
+              window.open("https://instagram.com/{{ site.instagram_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
@@ -476,7 +476,7 @@
             title: 'Facebook',
             section: 'Socials',
             handler: () => {
-              window.open("https://facebook.com/{{ site.facebook_id }}", "_blank");
+              window.open("https://facebook.com/{{ site.facebook_id }}", "_blank", "noopener,noreferrer");
             },
           },
         {%- endif -%}
