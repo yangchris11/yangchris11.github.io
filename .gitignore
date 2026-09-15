@@ -4,7 +4,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .DS_store
-.ruby-version
+# Keep the project Ruby version under version control.
 .tweet-cache
 Gemfile.lock
 assets/libs/
